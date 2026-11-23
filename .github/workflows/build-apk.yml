@@ -23,11 +23,11 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Siapkan Android 17 SDK (API 37)
+      - name: Siapkan Android 17 SDK (API 35)
         run: |
           SDK_MANAGER="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
           yes | "$SDK_MANAGER" --licenses > /dev/null 2>&1 || true
-          "$SDK_MANAGER" "platforms;android-37" "build-tools;36.0.0"
+          "$SDK_MANAGER" "platforms;android-35" "build-tools;36.0.0"
 
       - name: Setup Gradle 9.5.0
         uses: gradle/actions/setup-gradle@v4

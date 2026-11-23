@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace = "com.ylowstone.kaskita"
-    compileSdk = 37
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.ylowstone.kaskita"
         minSdk = 29          // Android 10
-        targetSdk = 37       // Android 17
+        targetSdk = 35       // Android 17
         versionCode = 1
         versionName = "1.0.0"
     }
